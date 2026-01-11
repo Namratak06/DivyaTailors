@@ -1,0 +1,68 @@
+.services {
+    background-color: var(--secondary-color);
+    background-image: linear-gradient(to bottom right, var(--secondary-color), #fff);
+}
+
+.services-intro {
+    margin-bottom: 3rem;
+    color: var(--text-light);
+    font-size: 1.1rem;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* Slightly wider cards */
+    gap: 2.5rem;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.8);
+    /* Glassmorphism base */
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    /* More rounded */
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Bouncy transition */
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+    height: 250px;
+    overflow: hidden;
+}
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-image img {
+    transform: scale(1.1);
+}
+
+.service-details {
+    padding: 1.5rem;
+}
+
+.service-name {
+    font-size: 1.25rem;
+    color: var(--primary-dark);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-heading);
+}
+
+.service-desc {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    line-height: 1.5;
+}

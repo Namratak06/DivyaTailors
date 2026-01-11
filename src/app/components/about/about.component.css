@@ -1,0 +1,50 @@
+.about {
+    background-color: var(--white);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.divider {
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-dark);
+    margin: 0 auto 2rem;
+}
+
+.about-text {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 800px;
+    margin: 0 auto 1.5rem;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.icon {
+    font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+    .features {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
